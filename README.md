@@ -41,12 +41,44 @@ Balances were converted from CAD millions to CAD billions.
 
 ## Outputs
 
-- A cleaned monthly borrowing dataset.
-- A summary comparing starting and latest balances.
-- Growth comparisons across four borrowing categories.
-- Credit-card monthly growth statistics.
-- Three charts available in the project files.
+### Cleaned Dataset
+`canadian_borrowing_cleaned.csv`
 
+Contains monthly observations for personal loans, credit cards, personal lines of credit, and residential mortgages. Balances are expressed in CAD billions. Additional columns show monthly credit-card growth and a three-month moving average.
+
+### Category Summary
+`borrowing_summary.csv`
+
+Compares each borrowing category using:
+- Starting and latest outstanding balances.
+- Absolute balance changes in CAD billions.
+- Percentage growth over the observed period.
+
+Categories are ranked by percentage growth to highlight differences in borrowing trends.
+
+### Borrowing Growth Chart
+`borrowing_growth.png`
+
+Indexes each category to 100 in the first observed month. This allows growth to be compared across categories with substantially different balance sizes.
+
+### Latest Balances Chart
+`latest_balances.png`
+
+Compares outstanding balances across the four categories in the latest available month, with values expressed in CAD billions.
+
+### Credit-Card Trend Chart
+`credit_card_trend.png`
+
+Displays monthly credit-card balances alongside a three-month moving average, making the overall trend easier to distinguish from short-term fluctuations.
+
+### Notebook Statistics
+
+The notebook also reports:
+- Average monthly percentage change in credit-card balances.
+- The month with the largest percentage increase.
+- The month with the largest percentage decrease.
+- The category with the highest percentage growth over the observed period.
+  
 ## How to Run
 
 Open `notebooks/canadian_consumer_borrowing.ipynb` in Google Colab and run the cells in order.
